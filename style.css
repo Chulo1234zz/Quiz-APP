@@ -1,0 +1,196 @@
+/*
+
+TODO:
+1. Make the buttons sexy
+2. Create a better design
+
+*/
+
+body, html, div, blockquote,
+img, label, p,
+h1, h2, h3, h4, h5, h6,
+pre, ul, ol, li, dl, dt, dd,
+form, a, fieldset, input, th, td {
+    margin: 0; padding: 0; border: 0; outline: none;
+}
+
+body {
+    line-height: 1;
+    font-size: 100%; /* Author states: modify based on what you want */
+    background-color: purple;
+    color: #Fff;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    padding: .6em 0;
+    margin: 0 15px;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.floatLeft {
+    float: left;
+    padding: .5em .5em .5em 0;
+}
+.floatRight {
+    float: right;
+    padding: .5em 0 .5em .5em;
+}
+
+/*
+
+custom
+
+*/
+
+.wrapper {
+    font-size: 14px;
+    font-family: Verdana, Arial, Helvetica;
+    text-align: center;
+    
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    
+    position: relative;
+}
+.million{
+    height: 10vh;
+    position: absolute;
+    top: 0;
+    
+}
+
+h1 {
+    position: absolute;
+    left: -10000em;
+}
+
+.progress {
+    margin: 5px 5%;
+}
+
+.quiz {
+    width: 100%;
+    height: 360px;
+    
+/*    border: 1px solid black;*/
+    margin: 50px auto;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 1.25em;
+    width: 100%;
+    
+    padding: 7px;
+    margin: 25px auto;
+}
+
+p {
+    margin: 0;
+}
+
+span {
+    display: block;
+    margin: 25px auto;
+    width: 60%;
+    padding: 10px;
+    
+    transition: all 0.25s;
+}
+span:hover {
+    cursor: pointer;
+    /*border: 1px solid rgba(81,203,238,1);*/
+    box-shadow: 0 0 10px rgba(81,203,238,1);
+    background-color: gold;
+    font-size: 16px;
+}
+
+.buttons {
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    right: 0;
+}
+
+.buttons button {
+    padding: 15px 45px;
+    background: #fafafa;
+    border: 1px solid #f00;
+    
+    color: #f00;
+    
+    transition: all .15s;
+}
+.buttons button:hover {
+    border-color: #fafafa;
+    color: #fafafa;
+    
+    background: #f00;
+}
+
+.buttons button.reset {
+    border-color: #00f;
+    color: #00f;
+}
+.buttons button.reset:hover {
+    border-color: #fafafa;
+    color: #fafafa;
+    
+    background: #00f;
+}
+
+button:focus {
+    outline: none;
+}
+
+/*
+
+custom
+
+*/
+
+.hide {
+    display: none;
+}
+
+/*
+
+media
+
+*/
+
+@media only screen and (min-width: 660px) {
+    .quiz {
+        margin: 100px auto;
+        width: 660px;
+    }
+    
+    h2 {
+        font-size: 24px;
+        padding: 0;
+    }
+    
+    span {
+        margin: 40px auto;
+        font-size: 16px;
+    }
+    span:hover {
+        font-size: 18px;
+    }
+    
+    .buttons {
+        bottom: -20%;
+    }
+}
+.sr-only{
+    display: none;
+}
